@@ -9,5 +9,5 @@ At present, _any and all_ aspects of this organization are up for discussion and
 
 ## Details
 
-Until merged, see the [alpha](https://github.com/Motley-Horde/org/blob/alpha/docs/README.md) and [beta](https://github.com/Motley-Horde/org/blob/beta/docs/README.md) branches for the working details.
+Until merged, see the [alpha](https://github.com/Motley-Horde/org/tree/alpha) and [beta](https://github.com/Motley-Horde/org/tree/beta) branches for the working details.
 
