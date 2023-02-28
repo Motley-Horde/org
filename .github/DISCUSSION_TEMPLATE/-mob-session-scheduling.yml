@@ -1,0 +1,76 @@
+title: "Mob Session: "
+labels: ["Mob Session", "Mobs"]
+
+body:
+- type: input
+  id: length
+  attributes:
+    label: Session Length
+    description: How long should this session(s) run?
+    value: 60 minutes
+  validations:
+    required: false
+    
+- type: textarea
+  id: when
+  attributes:
+    label: When
+    description: |
+      When are you proposing this session(s) happen?
+      Ensure that you include (1) how many sessions & (2) the date-time https://www.worldtimebuddy.com link for each proposed timeslot.
+      (If your timezone isn't shown in the included links below, this [time zone map](https://www.timeanddate.com/time/map/) should help you quickly convert them.) 
+    value: |
+      For each proposed time range, ensure that you include:  
+        1. How many sessions you want associated with this schedule?  
+            e.g. if you suggest the same three hour window for 5 separate days, are you trying to schedule a single mob session, or are you trying to schedule an hour for each of those days, or are you trying to schedule 3 consecutive sessions on a single day?  
+        2. Each of date-times that you are proposing, ***to include a corresponding link for that date:time on [https://www.worldtimebuddy.com](https://www.worldtimebuddy.com)***  
+          * select the timezones to be displayed  (recommend including San Francisco, Washington DC, UTC, Libreville, New Delhi, & Taipei, to cover a wide range of global time translations)  
+          * move the slider to select your specific time window
+          * click the `LINK TO THIS VIEW` link in the upper right corner to generate the link  
+          Note that worldtimebuddy's user interface only shows the next 5 days, but you can:  
+            1. select the comparable *day* & timeframe (e.g. if you're trying to schedule a session(s) for 3 Saturdays from now, select the same time frame for the Saturday during the upcoming week which is visible)  
+            2. generate the url  
+            3. in the generated url, find the `&date=` query parameter and modify it to the date of your desired session  
+            
+            
+         For easy discussion, you should use the date:time for your local timeframe as the link text.  Discussion participants can then reference subsets of that timeframe and it should still be readable.  e.g. If the original poster (OG) suggests "Feb 24th between 5-7pm PST" someone could state that they're available from 5-6 with the implication being that they're available "Feb 24th between *5-6pm* PST"  
+    
+      Examples:  
+        - One 60 minute session [Feb 24th between 5-7pm PST](https://www.worldtimebuddy.com/?qm=1&lid=5391959,4140963,100,2399697,1261481,1668341&h=100&date=2023-2-25&sln=1-3&hf=1)  
+        - Two 60 minute sessions in the window of: [2023-02-25 14:00-16:00 UTC+01:00](https://www.worldtimebuddy.com/?qm=1&lid=5391959,4140963,100,2399697,1261481,1668341&h=100&date=2023-2-25&sln=14-18&hf=1)  
+        
+  validations:
+    required: true
+    
+- type: textarea
+  id: what
+  attributes:
+    label: What
+    description: |
+      What task(s), issue(s), exercise(s) are you proposing to happen during this session(s)?  
+      Ensure that you include (1) specific idea, (2) type, (3) tags, & (4) any additional info.
+    value: |
+      For each proposed mobbing idea, provide:
+        1. the specific task(s), issue(s), exercise(s), etc
+        2. indicate what project or training type it is
+        3. add any relevant tags
+        4. include any other information that might be relevant in deciding whether to participate and to have prepared.  
+      Note, that it is possible all relevant information isn't included, because there may simply be skills, environments, etc that aren't know exist, or thought relevant, until they've encountered.  
+        
+      Examples:  
+        My first idea for what we could work on is: [Firefox - Accessibility defect - Bug 1780794](https://bugzilla.mozilla.org/show_bug.cgi?id=1780794) (OSS project) https://github.com/Motley-Horde/docs/labels/%3Ahammer_and_wrench%3A%20skill-mercurial, https://github.com/Motley-Horde/docs/labels/%3Aglobe_with_meridians%3A%20env-macos, https://github.com/Motley-Horde/docs/labels/%3Aglobe_with_meridians%3A%20env-firefox  
+          
+        My second idea would be to train on: [Codewars - "Multiples of 3 or 5" (6 kyu)](https://www.codewars.com/kata/514b92a657cdc65150000006) (exercise) https://github.com/Motley-Horde/docs/labels/%3Ahammer_and_wrench%3A%20skill-typescript  
+        
+      references:
+        - [how to include labels in GH markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#labels)  
+  validations:
+    required: false
+    
+- type: textarea
+  id: additional-info
+  attributes:
+    label: Additional Info
+    description: What else should be known about this proposed Mob Session(s)?
+  validations:
+    required: false
